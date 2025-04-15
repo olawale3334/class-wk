@@ -12,12 +12,12 @@ console.log(personalinfo)
       product3:"soap",
       product4:"oil"
    }
-   let key = Object.keys(todos)
-let value =Object.values(todos)
-console.log(key,value);
+   let keys = Object.keys(product)
+let values =Object.values(product)
+console.log(keys,values);
 
- key.forEach(key,i => {
-     console.log(`${key} ${value[i]}`);
+ keys.forEach((keys,i) => {
+     console.log(`${keys} ${values[i]}`);
      
  });
  

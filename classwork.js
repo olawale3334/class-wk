@@ -5,27 +5,32 @@ console.log(personalinfo)
 
 
 // task 2
-   let todos = {
+   let product = {
     
-      todo1:["coding"] ,
-      todo2:["read"],
-      todo3:["sleep"],
-      todo3:["eat"] 
+      tproduct1:"coding",
+      product2:"perfume",
+      product3:"soap",
+      product4:"oil"
    }
    let key = Object.keys(todos)
 let value =Object.values(todos)
-console.log(value);
-console.log(key);
+console.log(key,value);
 
-if (key.includes('todo1') && todos.todo1.includes('coding')){
-    console.log("coding  eixst");
-    
-} else{
-    console.log('coding does not exist');
-    
-}
-let mode ={
+ key.forEach(key,i => {
+     console.log(`${key} ${value[i]}`);
+     
+ });
+ 
+
+let settings ={
      theme: "dark",
-     notification: true
+      color: "white",
+      notifications:true
+    
 }
-  Object.freeze(mode)
+ Object.freeze(settings)
+ settings.theme = 'light'
+ console.log(settings);
+ console.log(Object.isFrozen(settings));
+ 
+  
